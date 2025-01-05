@@ -1,0 +1,63 @@
+.explorebrand-item-list img{
+  height: 80px;
+  width: 9.5vw;
+  max-width: 130px;
+  cursor: pointer;
+  transition: 0.2s;
+  border: 1px solid #000000;
+  border-radius: 20%;
+  padding: 20px;
+  mix-blend-mode: multiply;
+}
+.explorebrand{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.explorebrand h1{
+  font-weight: 500;
+}
+.explorebrand-txt{
+  max-width: 60%;
+}
+.explorebrand-list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+  margin: 20px 0px;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+.explorebrand-item-list{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.explorebrand-item-list p{
+  cursor: pointer;
+  font-size: max(1.4vw,16px)
+}
+.explorebrand hr{
+  margin: 10px 0px;
+  height: 2px;
+  background-color: rgb(225, 217, 217);
+  border: none;
+}
+.explorebrand-item-list .active{
+  border: 4px solid rgb(32, 49, 48);
+  padding: 22px;
+}
+@media (max-width:1050px) {
+  .explorebrand-txt{
+    max-width: 100%;
+    font-size: 14px;
+  }  
+}
+@media (max-width:750px) {
+  .explorebrand-item-list img{
+    height: 40px;
+    width: 9.5vw;
+  }
+}
