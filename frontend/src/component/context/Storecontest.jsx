@@ -22,6 +22,7 @@ const Storecontextprovider = (props) => {
       );
     }
   };
+  
   const removeFromCart = async (itemId) => {
     setcartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
     if (token) {
